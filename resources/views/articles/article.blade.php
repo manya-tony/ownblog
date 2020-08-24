@@ -23,7 +23,7 @@
             </div>
             <div class="article-imgWrap">
                 @if($article->image)
-                    <img class="article-img" src="{{ asset('storage/images/'.$article->image) }}" alt="{{ $article->title }}">
+                    <img class="article-img" src="{{ asset('storage/app/public/images/'.$article->image) }}" alt="{{ $article->title }}">
                 @else
                     <img class="article-img" src="{{ asset('images/sample.png') }}" alt="{{ $article->title }}">
                 @endif
