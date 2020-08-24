@@ -32,7 +32,7 @@
                     @endif
                     <nav class="header-item_nav">
                             @if(Auth::check())
-                                <span class="header-item_text">ようこそ、{{ Auth::user()->name }}さん /
+                                <span class="header-item_text">
                                     <a href="{{ route('art.create') }}">create</a> / 
                                     <a href="#" id="js-logout">logout</a>
                                     <form action="{{ route('logout') }}" method="post" style="display: none;" id="js-logout-form">@csrf</form>
