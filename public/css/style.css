@@ -460,7 +460,7 @@ footer p {
         justify-content: center;
     }
     .header-item_title {
-        line-height: 0;
+        line-height: 30px;
     }
     .top h1 {
         font-size: 44px;
@@ -488,12 +488,13 @@ footer p {
         -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
+        height: auto;
     }
     .articleList-item_text {
-        flex: 1;
+        flex: auto;
     }
     .articleList-item_img {
-        flex: 1;
+        flex: auto;
     }
     .article-imgWrap {
         height: 180px;
