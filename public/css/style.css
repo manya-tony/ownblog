@@ -209,7 +209,7 @@ TOP画面
     border: 1px solid #c1baaf;
 }
 .articleList-item_text {
-    flex: 2;
+    flex: 3;
     padding: 10px;
 }
 .articleList-item_title {
@@ -221,7 +221,7 @@ TOP画面
 }
 .articleList-item_img {
     display: block;
-    flex: 1;
+    flex: 2;
     width: 100%;
     overflow: hidden;
 }
