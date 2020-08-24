@@ -459,6 +459,9 @@ footer p {
         -ms-flex-pack: center;
         justify-content: center;
     }
+    .header-item_title {
+        line-height: 0;
+    }
     .top h1 {
         font-size: 44px;
     }
@@ -477,14 +480,20 @@ footer p {
     .categoryList-item {
         margin-bottom: 5px;
     }
+    .categoryList-link {
+        font-size: 10px;
+    }
     .articleList-item {
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
+    .articleList-item_text {
+        flex: 1;
+    }
     .articleList-item_img {
-        height: 200px;
+        flex: 1;
     }
     .article-imgWrap {
         height: 180px;
