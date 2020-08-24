@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'TOP')
+@section('title', 'わたしだけが見られるわたしだけのためのブログサービス')
 
 @section('content')
     <div class="container_s">

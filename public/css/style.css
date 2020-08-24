@@ -483,11 +483,8 @@ footer p {
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
-    .articleList-item_text {
-        flex: 1;
-    }
     .articleList-item_img {
-        flex: 4;
+        height: 200px;
     }
     .article-imgWrap {
         height: 180px;
