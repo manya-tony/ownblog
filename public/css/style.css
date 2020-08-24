@@ -88,8 +88,14 @@ input, button, textarea, select {
     width: 100%;
 }
 .header-item {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+	-ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+	-ms-flex-align: center;
     align-items: center;
 }
 .header-item_title {
@@ -160,14 +166,23 @@ TOP画面
 カテゴリリスト
 =========================== */
 .categoryList {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+	-ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+	-ms-flex-align: center;
     align-items: center;
     border-bottom: 1px solid #c1baaf;
 }
 .categoryList-item {
     flex: 4;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 .categoryList-item li {
@@ -188,7 +203,11 @@ TOP画面
     transition: opacity .3s;
 }
 .categoryEditList li {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+	-ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 5px;
     border-bottom: 1px solid #c1baaf;
@@ -203,7 +222,11 @@ TOP画面
 .articleList-item {
     width: 100%;
     height: 160px;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+	-ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 5px;
     border: 1px solid #c1baaf;
@@ -251,8 +274,14 @@ TOP画面
     width: 100%;
 }
 .article-link {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+	-ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+	-ms-flex-align: center;
     align-items: center;
     margin-bottom: 10px;
     font-size: 13px;
@@ -388,7 +417,11 @@ footer {
     margin-top: auto;
 }
 footer ul {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+	-ms-flex-pack: center;
     justify-content: center;
 }
 footer ul {
@@ -404,4 +437,38 @@ footer p {
     padding: 10px 0;
     text-align: center;
     font-size: 10px;
+}
+
+
+/* ===========================
+メディアクエリ
+=========================== */
+@media screen and (max-width:450px) { 
+    .header-item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .categoryList {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .categoryList-item {
+        margin-bottom: 10px;
+    }
+    .articleList-item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
 }
