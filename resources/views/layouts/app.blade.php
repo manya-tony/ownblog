@@ -13,6 +13,8 @@
     <title>@yield('title') | {{ config('app.name') }}</title>
     <!-- styles -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <!-- favicon -->
+    <link href="{{ asset('favicon.ico') }}" rel="shortcut icon">
 </head>
 <body>
 
