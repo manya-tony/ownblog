@@ -21,7 +21,7 @@ class ArticleController extends Controller
         $articles = Auth::user()
                     ->articles()
                     ->with('category')
-                    ->oederBy('updated_at', 'desc')
+                    ->orderBy('updated_at', 'desc')
                     ->get();
 
         return view('articles.index', compact('categories', 'articles'));
