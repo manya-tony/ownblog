@@ -18,7 +18,11 @@ class ArticleController extends Controller
     public function index()
     {
         $categories = Auth::user()->categories()->get();
-        $articles = Auth::user()->articles()->with('category')->get();
+        $articles = Auth::user()
+                    ->articles()
+                    ->with('category')
+                    ->oederBy('updated_at', 'desc')
+                    ->get();
 
         return view('articles.index', compact('categories', 'articles'));
     }
